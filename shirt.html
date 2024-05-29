@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirts</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpg">
+    <script src="https://kit.fontawesome.com/d2d12656b6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--for styling the page-->
+<style>
+      body{
+        background-color: rgb(244, 243, 240);
+      }
+      .main-heading{
+ text-align: center;
+ 
+}
+#grid-main{
+ grid-template-columns: 6;
+ gap:10px;
+ border: 1px solid black;
+}
+.grid-img{
+  width:100%;
+  height:190px;
+}
+.grid-item{
+  text-align: center;
+  justify-content: last baseline;
+}
+/*for making responsive*/
+@media only screen and (max-width:768px) {
+  #grid-main {
+    grid-template-columns:2;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  #grid-main {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+i{
+  color: #3C75BB;
+}
+button{
+  background-color: #e0a961;
+  border-radius: 5px;
+  border: 1px solid;
+  color: white;
+}
+</style>
+</head>
+<body>
+  <header></header>
+  <!--for making heading-->
+  <h1 class="main-heading">Shirts</h1>
+  <!--creating a div for the main grid-->
+  <div class="container">
+    <div class="row row-cols-lg-6 row-cols-md-3 row-cols-sm-2">
+      <div class="col" id="grid-main">
+        <img src="./Images/istockphoto-1143166828-170667a.webp" alt="Shirts images" class="grid-img">
+        <h3 class="grid-item">Shirt</h3>
+        <h4 class="grid-item">9$</h4>
+        <p class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas reiciendis optio nemo sint ipsa consequatur sed aperiam possimus ducimus.</p>
+        <button class="grid-item"><a href="#"><i class="fas fa-shopping-cart"></i></a>Add to Cart</button>
+      </div>
+      <div class="col" id="grid-main">
+        <img src="./Images/istockphoto-1167770957-170667a.webp" alt="Shirts images" class="grid-img">
+        <h3 class="grid-item">Cool-Shirt</h3>
+        <h4 class="grid-item">22$</h4>
+        <p class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas reiciendis optio nemo sint ipsa consequatur sed aperiam possimus ducimus.</p>
+        <button class="grid-item"><a href="#"><i class="fas fa-shopping-cart"></i></a>Add to Cart</button>
+
+      </div>
+      <div class="col"id="grid-main">
+        <img src="./Images/istockphoto-1302081591-170667a.webp"class="grid-img">
+        <h3 class="grid-item">Shirt<h3>
+        <h4 class="grid-item">20$</h4>
+        <p class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas reiciendis optio nemo sint ipsa consequatur sed aperiam possimus ducimus.</p>
+        <button class="grid-item"><a href="#"><i class="fas fa-shopping-cart"></i></a>Add to Cart</button>
+        </div>
+      <div class="col"id="grid-main">
+        <img src="./Images/istockphoto-882886106-170667a.webp"class="grid-img">
+        <h3 class="grid-item">Blue-Shirt</h3>
+        <h4 class="grid-item">11$</h4>
+        <p class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas reiciendis optio nemo sint ipsa consequatur sed aperiam possimus ducimus.</p>
+        <button class="grid-item"><a href="#"><i class="fas fa-shopping-cart"></i></a>Add to Cart</button>
+      </div>
+      <div class="col"id="grid-main">
+        <img src="./Images/istockphoto-912720244-170667a.webp" class="grid-img">
+        <h3 class="grid-item">White-Shirt</h3>
+        <h4  class="grid-item">100$</h4>
+        <p class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas reiciendis optio nemo sint ipsa consequatur sed aperiam possimus ducimus.</p>
+        <button class="grid-item"><a href="#"><i class="fas fa-shopping-cart"></i></a>Add to Cart</button>
+      </div>
+      <div class="col"id="grid-main">
+        <img src="./Images/istockphoto-882886106-170667a.webp"class="grid-img">
+        <h3 class="grid-item">Shirt<h3>
+        <h4 class="grid-item">19$</h4>
+        <p class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas reiciendis optio nemo sint ipsa consequatur sed aperiam possimus ducimus.</p>
+        <button class="grid-item"><a href="#"><i class="fas fa-shopping-cart"></i></a>Add to Cart</button>
+      </div>
+
+    </div>
+    </div>
+    <br>
+    <!-- 2nd grid container -->
+  <div class="container">
+    <div class="row row-cols-lg-6 row-cols-md-3 row-cols-sm-2">
+      <div class="col" id="grid-main">
+        <img src="./Images/istockphoto-1167770957-170667a.webp" alt="Shirts images" class="grid-img">
+        <h3 class="grid-item">Shirt</h3>
+        <h4 class="grid-item">9$</h4>
+        <p class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas reiciendis optio nemo sint ipsa consequatur sed aperiam possimus ducimus.</p>
+        <button class="grid-item"><a href="#"><i class="fas fa-shopping-cart"></i></a>Add to Cart</button>
+      </div>
+      <div class="col" id="grid-main">
+        <img src="./Images/istockphoto-1143166828-170667a.webp" alt="Shirts images" class="grid-img">
+        <h3 class="grid-item">shirt</h3>
+        <h4 class="grid-item">22$</h4>
+        <p class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas reiciendis optio nemo sint ipsa consequatur sed aperiam possimus ducimus.</p>
+        <button class="grid-item"><a href="#"><i class="fas fa-shopping-cart"></i></a>Add to Cart</button>
+      </div>
+      <div class="col"id="grid-main">
+        <img src="./Images/istockphoto-912720244-170667a.webp" alt="Shirts images" class="grid-img">
+        <h3 class="grid-item">White-Shirt<h3>
+        <h4 class="grid-item">20$</h4>
+        <p class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas reiciendis optio nemo sint ipsa consequatur sed aperiam possimus ducimus.</p>
+        <button class="grid-item"><a href="#"><i class="fas fa-shopping-cart"></i></a>Add to Cart</button>
+        </div>
+      <div class="col"id="grid-main">
+        <img src="./Images/istockphoto-544358286-170667a.webp" alt="Shirts images" class="grid-img">
+        <h3 class="grid-item">Green-shirt</h3>
+        <h4 class="grid-item">11$</h4>
+        <p class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas reiciendis optio nemo sint ipsa consequatur sed aperiam possimus ducimus.</p>
+        <button class="grid-item"><a href="#"><i class="fas fa-shopping-cart"></i></a>Add to Cart</button>
+      </div>
+      <div class="col"id="grid-main">
+        <img src="./Images/istockphoto-882886106-170667a.webp"  alt="Shirts images" class="grid-img">
+        <h3 class="grid-item">Blue-Shirt </h3>
+        <h4  class="grid-item">100$</h4>
+        <p class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas reiciendis optio nemo sint ipsa consequatur sed aperiam possimus ducimus.</p>
+        <button class="grid-item"><a href="#"><i class="fas fa-shopping-cart"></i></a>Add to Cart</button>
+      </div>
+      <div class="col"id="grid-main">
+        <img src="./Images/istockphoto-1302081591-170667a.webp" alt="Shirts images" class="grid-img">
+        <h3 class="grid-item">Shirts<h3>
+        <h4 class="grid-item">19$</h4>
+        <p class="grid-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quas reiciendis optio nemo sint ipsa consequatur sed aperiam possimus ducimus.</p>
+        <button class="grid-item"><a href="#"><i class="fas fa-shopping-cart"></i></a>Add to Cart</button>
+      </div>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <footer></footer>
+</body>
+</html>

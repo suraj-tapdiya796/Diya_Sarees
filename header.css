@@ -1,0 +1,151 @@
+/*for header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:black;
+}
+
+.logo {
+    height: 60px;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+    gap: 4;
+
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.search-bar {
+    width: 270px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 8px;
+    border: 2px solid black;
+}
+
+.search-btn {
+    padding: 8px 20px;
+    border: 2px solid black;
+    border-top-right-radius: 8px;
+    background-color: #e0a961;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cart-login {
+    display: flex;
+    align-items: center;
+}
+
+.main-login {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0a961;
+    color: #fff;
+    margin-right:40px;
+    cursor: pointer;
+}
+
+#cart{
+    color: #3c75bb;
+    margin-right: 20px;
+}
+#search:hover {
+    background-color: #ffce47; 
+}
+#cart:hover {
+    color: #6cb2eb; 
+}
+
+/* For the login button */
+.main-login:hover {
+    background-color: #ffa500; 
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar-nav .nav-item.show .dropdown-toggle::after {
+        content: "\f106"; /* FontAwesome chevron up icon */
+    }
+
+    .navbar-nav .nav-item .dropdown-toggle {
+        cursor: pointer;
+    }
+}
+/*for making responsive*/
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height:230px;
+    }
+
+    .search-cart {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .search-box {
+        margin-right: 0;
+        margin-bottom: 200px
+    }
+
+    .search-bar {
+        width: calc(100% - 20px);
+    }
+
+    .search-btn {
+        width: 90px;
+    }
+
+    .cart-login {
+        margin-top: -100px;
+        margin-left: -290px;
+    }
+    .for-cart{
+        margin-left: -100px;
+    }
+    .logo-in{
+        width:80%;
+    }
+}
+
+
+/* For the dropdown menu items */
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .dropdown-menu a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+}
+
+/* on hover */
+.navbar-nav .dropdown-menu a:hover {
+    background-color: #f2f2f2;
+}
+.navbar-nav .nav-item.show .dropdown-menu {
+    display: block;
+}
